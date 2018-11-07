@@ -7,5 +7,5 @@ Le but du TP sera de corriger le code de la classe `Complex` en s'aidant de test
 
 ## Membres du projet
 
-- Dupuy, Aurelien, 2
-- Bevilacqua, Lucas, 2
+- Dupuy Aurelien, Groupe 2
+- Bevilacqua Luca, Groupe 2
