@@ -137,5 +137,12 @@ public class ComplexTest {
     @Test
     void testReal() {
         assertEquals(new Complex(real, 0),Complex.real(real));
+
     }
+
+    /*@Test
+    void testAdd() {
+        assertEquals(new Complex(real, 0),Complex.add());
+    }*/
+
 }
