@@ -175,6 +175,13 @@ public class ComplexTest {
         assertEquals(Math.sqrt(2), Math.sqrt(onePlusI.real * onePlusI.real + onePlusI.imaginary * onePlusI.imaginary));
     }
 
+    @Test
+    void testScale(){
+        assertEquals(new Complex(0, 1), minusI.scale(-1));
+        assertEquals(new Complex(1, 2), two.scale(0.5));
+        assertEquals(new Complex(2, -2), oneMinusI.scale(2));
+        assertEquals(new Complex(3, 3), onePlusI.scale(3));
+    }
 
 }
 
