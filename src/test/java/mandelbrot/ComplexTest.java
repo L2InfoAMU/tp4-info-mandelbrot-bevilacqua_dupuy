@@ -140,9 +140,11 @@ public class ComplexTest {
 
     }
 
-    /*@Test
+    @Test
     void testAdd() {
-        assertEquals(new Complex(real, 0),Complex.add());
-    }*/
+        assertEquals(new Complex(1,0), new Complex(onePlusI.real + minusI.real,onePlusI.imaginary + minusI.imaginary));
+        assertEquals(new Complex(0,-1), new Complex(minusOne.real + minusOne.real,two.imaginary + oneMinusI.imaginary));
+        assertEquals(new Complex(1,1), new Complex(onePlusI.real + minusI.real,onePlusI.imaginary + minusOne.imaginary));
+    }
 
 }
