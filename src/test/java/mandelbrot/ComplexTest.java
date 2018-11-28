@@ -147,4 +147,11 @@ public class ComplexTest {
         assertEquals(new Complex(1,1), new Complex(onePlusI.real + minusI.real,onePlusI.imaginary + minusOne.imaginary));
     }
 
+    @Test
+    void testSubtract(){
+        assertEquals(new Complex(1,0), new Complex(two.real - onePlusI.real,onePlusI.imaginary - onePlusI.imaginary));
+        assertEquals(new Complex(0,-1), new Complex(onePlusI.real - onePlusI.real,minusOne.imaginary - onePlusI.imaginary));
+        assertEquals(new Complex(1,1), new Complex(onePlusI.real - minusI.real,onePlusI.imaginary - minusOne.imaginary));
+    }
+
 }
