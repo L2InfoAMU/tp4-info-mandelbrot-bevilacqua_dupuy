@@ -161,4 +161,13 @@ public class ComplexTest {
         assertEquals(new Complex(1,1), new Complex(onePlusI.real * onePlusI.real - minusOne.imaginary * minusI.imaginary,onePlusI.real * onePlusI.imaginary + onePlusI.imaginary * minusI.real));
     }
 
+    @Test
+    void testSquaredModulus(){
+        assertEquals(1, minusOne.real * minusOne.real + minusOne.imaginary * minusOne.imaginary);
+        assertEquals(2, onePlusI.real * onePlusI.real + onePlusI.imaginary * onePlusI.imaginary);
+        assertEquals(4, twoI.real * twoI.real + twoI.imaginary * twoI.imaginary);
+    }
+
+
 }
+
